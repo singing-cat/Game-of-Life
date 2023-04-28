@@ -7,7 +7,7 @@
 ** AUTHOR:      Dan Garcia  -  University of California at Berkeley
 **              Copyright (C) Dan Garcia, 2020. All rights reserved.
 **				Justin Yokota - Starter Code
-**				YOUR NAME HERE
+**				xgyy
 **
 ** DATE:        2020-08-23
 **
@@ -21,6 +21,7 @@
 //Determines what color the cell at the given row/col should be. This should not affect Image, and should allocate space for a new Color.
 Color *evaluateOnePixel(Image *image, int row, int col)
 {
+	//YOUR CODE HERE
 	Color *p = (Color*)malloc(sizeof(Color));
 	uint8_t B = image->image[row*image->cols + col]->B;
 	if(B % 2 == 0) {
@@ -39,6 +40,7 @@ Color *evaluateOnePixel(Image *image, int row, int col)
 //Given an image, creates a new image extracting the LSB of the B channel.
 Image *steganography(Image *image)
 {
+	//YOUR CODE HERE
 	Image *p = (Image*)malloc(sizeof(Image));
 	p->cols = image->cols; p->rows = image->rows;
 	p->image = (Color**)malloc(sizeof(Color*)*image->cols*image->rows);
@@ -65,6 +67,7 @@ Make sure to free all memory before returning!
 */
 int main(int argc, char **argv)
 {
+	//YOUR CODE HERE
 	Image *p = readData(argv[1]);
 	Image *q = steganography(p);
 	writeData(q);

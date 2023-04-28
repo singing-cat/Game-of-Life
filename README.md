@@ -1,1 +1,2 @@
 # Game-of-Life
+This is a project of UCB CS61C. You can go to [course website](https://inst.eecs.berkeley.edu/~cs61c/fa20/projects/proj1/) to get the start code and all the detailed guidence. Of course, you can take a reference here if you have any trouble with the coding and I'm glad to help you with any questions!

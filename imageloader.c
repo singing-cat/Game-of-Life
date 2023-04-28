@@ -7,7 +7,7 @@
 ** AUTHOR:      Dan Garcia  -  University of California at Berkeley
 **              Copyright (C) Dan Garcia, 2020. All rights reserved.
 **              Justin Yokota - Starter Code
-**				Shi Yi
+**				xgyy
 **
 **
 ** DATE:        2020-08-15
@@ -25,6 +25,7 @@
 //Make sure that you close the file with fclose before returning.
 Image *readData(char *filename) 
 {
+	//YOUR CODE HERE
 	FILE *fp = fopen(filename, "r");
 	Image *res = (Image*)malloc(sizeof(Image));
 	char buf[20];
@@ -52,6 +53,7 @@ Image *readData(char *filename)
 //Given an image, prints to stdout (e.g. with printf) a .ppm P3 file with the image's data.
 void writeData(Image *image)
 {
+	//YOUR CODE HERE
 	printf("P3\n");
 	printf("%d %d\n", image->cols, image->rows);
 	printf("%d\n", 255);
@@ -74,6 +76,7 @@ void writeData(Image *image)
 //Frees an image
 void freeImage(Image *image)
 {
+	//YOUR CODE HERE
 	for(int i = 0; i < image->rows*image->cols; i++) {
 		free(image->image[i]);
 	}
